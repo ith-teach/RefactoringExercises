@@ -5,12 +5,8 @@ package com.refactoring.exercises;
 
 public class Ejercicio04 {
 
-    private boolean esMayor(int a, int b) {
-        return a > b;
-    }
-    
     public int obtenerMaximo(int a, int b) {
-        if (esMayor(a, b)) {
+        if (a > b) {
             return a;
         }
         return b;
