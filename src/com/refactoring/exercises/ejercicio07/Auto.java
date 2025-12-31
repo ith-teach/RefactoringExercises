@@ -3,13 +3,13 @@ package com.refactoring.exercises.ejercicio07;
 //EJERCICIO 7: Extract Superclass (Extraer Superclase)
 //Extrae los atributos y métodos comunes a una superclase "Vehiculo"
 
-public class Auto {
+public class Auto extends Vehiculo {
 
-    private String marca;
-    private String modelo;
-    private int año;
-    
-    public void arrancar() {
+	public Auto(String marca, String modelo, int año) {
+		super(marca, modelo, año);
+	}
+
+	public void arrancar() {
         System.out.println("Arrancando auto");
     }
     
