@@ -8,10 +8,16 @@ public class Pedido {
     private Cliente cliente;
     private double monto;
     
-    public double calcularDescuento() {
-        if (cliente.esVIP()) {
-            return monto * 0.15;
-        }
-        return monto * 0.05;
-    }
+	public double calcularDescuento() {
+		return cliente.calcularDescuento(monto);
+	}
+
+	double getMonto() {
+		return monto;
+	}
+
+	void setMonto(double monto) {
+		this.monto = monto;
+	}
+
 }
