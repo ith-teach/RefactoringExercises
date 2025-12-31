@@ -1,19 +1,22 @@
-package com.refactoring.exercises;
+package com.refactoring.exercises.ejercicio08;
 
 //EJERCICIO 8: Extract Interface (Extraer Interfaz)
 //Extrae una interfaz "Reproducible" con los métodos públicos
 
-public class Ejercicio08 {
+public class Ejercicio08 implements Reproducible {
 
-    public void reproducir() {
+    @Override
+	public void reproducir() {
         System.out.println("Reproduciendo");
     }
     
-    public void pausar() {
+    @Override
+	public void pausar() {
         System.out.println("Pausando");
     }
     
-    public void detener() {
+    @Override
+	public void detener() {
         System.out.println("Deteniendo");
     }
     
