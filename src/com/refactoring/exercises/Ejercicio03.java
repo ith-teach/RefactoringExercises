@@ -5,11 +5,15 @@ package com.refactoring.exercises;
 
 public class Ejercicio03 {
 
-    public double calcularImpuesto(double monto) {
-        return monto * 0.21;
+    private static final int MONTO_MINIMO = 0;
+	private static final int MONTO_MAXIMO = 10000;
+	private static final double TASA_IVA = 0.21;
+
+	public double calcularImpuesto(double monto) {
+        return monto * TASA_IVA;
     }
     
     public boolean esMontoValido(double monto) {
-        return monto >= 0 && monto <= 10000;
+        return monto >= MONTO_MINIMO && monto <= MONTO_MAXIMO;
     }
 }
