@@ -5,7 +5,7 @@ package com.refactoring.exercises;
 
 public class Ejercicio01 {
 
-	public double calc(double x, int cantidad) {
-		return x * cantidad;
+	public double calcularTotal(double precio, int cantidad) {
+		return precio * cantidad;
 	}
 }
