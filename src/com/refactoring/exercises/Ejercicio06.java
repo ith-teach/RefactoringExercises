@@ -5,8 +5,9 @@ package com.refactoring.exercises;
 
 public class Ejercicio06 {
 
-    public double calcularInteres(double capital, int meses) {
-        double tasaInteres = 0.05;
-        return capital * tasaInteres * meses;
+    private double TASA_INTERES = 0.05;
+
+	public double calcularInteres(double capital, int meses) {
+        return capital * TASA_INTERES * meses;
     }
 }
