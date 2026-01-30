@@ -6,6 +6,10 @@ package com.refactoring.exercises;
 public class Ejercicio05 {
 
     public double calcularPrecioFinal(double precioBase, double tasaImpuesto, double descuento) {
-        return precioBase * (1 + tasaImpuesto) * (1 - descuento);
+        double factorImpuesto = 1 + tasaImpuesto;
+		double factorDescuento = 1 - descuento;
+		double precioConImpuesto = precioBase * factorImpuesto;
+		double precioConDescuento = precioConImpuesto * factorDescuento;
+		return precioConDescuento;
     }
 }
