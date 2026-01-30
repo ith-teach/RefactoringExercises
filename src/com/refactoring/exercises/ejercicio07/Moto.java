@@ -1,16 +1,8 @@
 package com.refactoring.exercises.ejercicio07;
 
-public class Moto {
-    
-	private String marca;
-    private String modelo;
-    private int año;
+public class Moto extends Vehicle {
     
     public void arrancar() {
         System.out.println("Arrancando moto");
-    }
-    
-    public void detener() {
-        System.out.println("Deteniendo moto");
     }
 }
