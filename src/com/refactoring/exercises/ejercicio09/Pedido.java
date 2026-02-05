@@ -6,12 +6,12 @@ package com.refactoring.exercises.ejercicio09;
 public class Pedido {
 
     private Cliente cliente;
-    private double monto;
+    double monto;
     
-    public double calcularDescuento() {
-        if (cliente.esVIP()) {
-            return monto * 0.15;
-        }
-        return monto * 0.05;
-    }
+    /**
+	 * @deprecated Use {@link com.refactoring.exercises.ejercicio09.Cliente#calcularDescuento(com.refactoring.exercises.ejercicio09.Pedido)} instead
+	 */
+	public double calcularDescuento() {
+		return cliente.calcularDescuento(monto);
+	}
 }
