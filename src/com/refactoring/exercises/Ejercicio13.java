@@ -5,8 +5,7 @@ package com.refactoring.exercises;
 
 public class Ejercicio13 {
 
-    public void registrarPersona(String nombre, String apellido, int edad, 
-            String direccion, String telefono, String email) {
-    	System.out.println("Registrando persona: " + nombre + " " + apellido);
+    public void registrarPersona(DatosPersonales datos) {
+    	System.out.println("Registrando persona: " + datos.getNombre() + " " + datos.getApellido());
 	}
 }
